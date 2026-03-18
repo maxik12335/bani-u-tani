@@ -373,9 +373,70 @@ a:focus {
   display: none;
 }
 
-.vidi-bani {
-  display: none;
+.vidi-bani-title {
+  font-weight: 900;
+  font-size: 48px;
+  margin-bottom: 40px;
+  text-align: center;
 }
+
+.vidi-bani {
+  padding: 60px 0;
+}
+
+.slider-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-title {
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 10px 13px;
+  background-color: #DFDEDD;
+  color: black;
+  border-radius: 36px;
+}
+
+/*  */
+  .swiper-box {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+ .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .swiper-button-next {
+    left: 103%!important;
+  }
+
+  .swiper-button-prev {
+    left: -70px!important;
+  }
 
 .menu-mobyle {
   display: none;
@@ -725,5 +786,9 @@ a:focus {
 
   .burger-mobyle span:not(:last-child) {
     margin-bottom: 3px;
+  }
+
+  .vidi-bani {
+    padding: 0 0 60px 0;
   }
 }

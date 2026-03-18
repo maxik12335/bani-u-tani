@@ -13,4 +13,31 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector('body').style.overflow = ""
     burgerMenu.classList.contains('menu-mobyle--active') ? burgerMenu.classList.remove('menu-mobyle--active') : ""
   })
+
+  var swiper = new Swiper(".swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 1500,
+  },
+  loop:true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  
+  breakpoints: {
+    350: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 5
+    },
+  }
+
+});
 })
