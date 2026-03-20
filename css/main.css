@@ -348,6 +348,7 @@ a:focus {
 .contacts-list__description--tel {
   text-decoration: none;
   color: black;
+  display: block;
 }
 
 .contacts-list__link {
@@ -681,7 +682,7 @@ a:focus {
   .contacts-list__title {
     font-size: 12px;
     text-align: center;
-    margin-bottom: 2px;
+    margin-bottom: 8px;
   }
 
   .contacts-list__description {
