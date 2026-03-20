@@ -282,12 +282,12 @@ a:focus {
 .gallary-title {
   font-size: 48px;
   font-weight: 900;
-  padding: 25px;
+  padding: 18px;
   width: 100%;
   background-color: #DFDEDD;
   text-align: center;
   border-radius: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .gallary-list {
@@ -426,7 +426,7 @@ a:focus {
   .swiper-slide img {
     display: block;
     width: 100%;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
   }
 
@@ -440,6 +440,28 @@ a:focus {
 
 .menu-mobyle {
   display: none;
+}
+
+.gallary-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 750px;
+  margin: 0 auto;
+}
+
+.gallary-list__item {
+  width: 23.5%;
+  padding: 7px 7px 35px 7px;
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 16px;
+}
+
+.gallary-list__item-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
 }
 
 @media (max-width: 1200px) {
@@ -612,8 +634,18 @@ a:focus {
     width: 100%;
   }
 
+  .gallary-list {
+    width: 90%;
+  }
+
   .gallary-title {
     font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .gallary-list__item {
+    width: 48%;
+    padding: 7px 7px 25px 7px;
   }
 
   .contacts-list{
